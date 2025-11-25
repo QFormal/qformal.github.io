@@ -5,17 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quantum Formal Initiative (QFormal)</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-nav .nav-link {
+      font-size: 1.5rem;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">QFormal</a>
+    <a class="navbar-brand" href="index.html">
+        <div class="ms-auto d-flex align-items-center">
+        <img src="logo.png" alt="QFormal Logo" style="height:40px;" class="ms-2">
+        </div>
+    QFormal</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-lean.html">Why Lean?</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-quantum.html">Why Quantum?</a></li>
         <li class="nav-item"><a class="nav-link" href="talks.html">Talks</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
@@ -25,10 +38,16 @@
 <div class="container mt-5">
   <div class="jumbotron">
     <h1 class="display-4">Quantum Formal Initiative (QFormal)</h1>
-    <p class="lead">PLACEHOLDER short description about the group.</p>
+    <p class="lead">A research initiative formalizing quantum information theory in <a href="https://lean-lang.org/">Lean 4</a></p>
     <hr class="my-4">
-    <p>We formalize quantum information theory in Lean 4. Our work is open-source and public: <a href="PLACEHOLDER" target="_blank">GitHub Repository</a>.</p>
-    <p>Read our paper on formalizing the quantum Stein's lemma: <a href="PLACEHOLDER" target="_blank">arXiv link</a>.</p>
+    <p>We believe that quantum information theory, quantum computing, and quantum physics are an important target for formal verification and automated theorem proving. If your background is in quantum, check out <a href="why-lean.html">Why Lean?</a>. And if your background is in theorem proving, check out <a href="why-quantum.html">Why Quantum?</a>! Either way, we think that "teaching" the computer about quantum theory in this precise way is the best way forward for several different domains:</p>
+    <ul>
+        <li>Advancing <b>quantum computing</b> by ensuring correctness and reliability of quantum algorithms, protocols, and compilers.</li>
+        <li>Enhancing <b>security</b> in <b>quantum cryptography</b> through formal verification of security proofs.</li>
+        <li><b>Facilitating research</b> in quantum information theory by providing a rigorous framework for exploring new concepts and theorems. In particular, by providing a basis for AI-assisted discoveries.</li>
+    </ul>
+    <p>Our main work is available on GitHub at the <a href="https://github.com/Timeroot/Lean-QuantumInfo" target="_blank">Lean-QuantumInfo</a> repository.</p>
+    <p>Read our paper on formalizing the quantum Stein's lemma: <a href="https://arxiv.org/pdf/2510.08672" target="_blank">arXiv:2510.08672</a>.</p>
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

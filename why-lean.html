@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why Lean?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-nav .nav-link {
+      font-size: 1.5rem;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+        <div class="ms-auto d-flex align-items-center">
+        <img src="logo.png" alt="QFormal Logo" style="height:40px;" class="ms-2">
+        </div>
+    QFormal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-lean.html">Why Lean?</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-quantum.html">Why Quantum?</a></li>
+        <li class="nav-item"><a class="nav-link" href="talks.html">Talks</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+  <h2>Why Lean?</h2>
+  <p>
+    An <strong>automated theorem prover</strong> is a computer program that checks the validity of mathematical statements and proofs by following strict logical rules. Unlike human mathematicians, who may rely on intuition or informal reasoning, automated theorem provers require every step to be explicit and justified. This process is based on the formal axioms and rules of mathematics, ensuring that only correct results are accepted. Automated theorem provers are used to verify the correctness of proofs, uncover errors, and sometimes even discover new results by exploring logical consequences.
+  </p>
+  <p>
+    <strong>Lean</strong> is a state-of-the-art proof assistant and programming language, designed for formalizing mathematics and verifying proofs with computer assistance. It is not an artificial intelligence system; Lean does not "guess" or "learn" like AI models. Instead, it performs precise, deterministic verification based on the axioms and rules of mathematics encoded in its logic. When a proof is accepted by Lean, it means that every logical step has been checked and validated by the computer, leaving no room for ambiguity or error. For those working in quantum information theory, Lean offers a powerful way to ensure that our mathematical reasoning is both precise and reliable. By encoding definitions, theorems, and proofs in Lean, we can leverage its type-theoretic foundations and automated proof checking to catch errors, clarify assumptions, and even discover new generalizations.
+  </p>
+  <p>
+    One of the greatest strengths of formalization in Lean is its ability to uncover more general versions of theorems. When translating mathematical arguments into Lean, every assumption must be made explicit. This process often reveals hidden dependencies or unnecessary restrictions, allowing us to generalize results beyond their original scope. In quantum information theory, where subtle distinctions can have major consequences, this clarity is invaluable.
+  </p>
+  <p>
+    Lean also provides a robust framework for validating known results. By reconstructing proofs in a formal system, we can be confident that every logical step is correct and that no gaps remain. This is especially important in quantum theory, where intuition can sometimes be misleading and errors may go unnoticed in traditional pen-and-paper proofs. Formalization in Lean acts as a safeguard, ensuring that our results are trustworthy.
+  </p>
+  <p>
+    Beyond pure mathematics, formal methods like Lean open the door to practical applications such as verified quantum compilers. As quantum software becomes more complex and critical, the need for correctness grows. Lean’s rigorous approach can help guarantee that quantum algorithms and protocols behave as intended. In areas like quantum key distribution and quantum cryptography, having a solid, formally verified theory of quantum entropies and security proofs is essential for building systems we can trust.
+  </p>
+  <p>
+    Lean is also increasingly relevant in the context of AI-for-math. As artificial intelligence systems become capable of generating mathematical ideas, conjectures, and even proofs, there is a growing need for reliable verification. Lean serves as a gold standard for checking the correctness of AI-generated mathematics, ensuring that new results are not just plausible, but provably correct. By acting as a rigorous verifier, Lean helps bridge the gap between creative AI and the demands of mathematical precision.
+  </p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

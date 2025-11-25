@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why Quantum?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-nav .nav-link {
+      font-size: 1.5rem;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+        <div class="ms-auto d-flex align-items-center">
+        <img src="logo.png" alt="QFormal Logo" style="height:40px;" class="ms-2">
+        </div>
+    QFormal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-lean.html">Why Lean?</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-quantum.html">Why Quantum?</a></li>
+        <li class="nav-item"><a class="nav-link" href="talks.html">Talks</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+  <h2>Why Quantum?</h2>
+  <p>
+    Quantum information theory stands at the intersection of mathematics, computer science, and physics, and is rapidly becoming one of the most important areas for formal verification. While many branches of mathematics and software engineering benefit from formal methods, quantum information presents unique challenges and opportunities that make it a particularly compelling target for formalization.
+  </p>
+  <p>
+    Quantum computing isn't just a theoretical curiosity, it's an emerging technology with the potential to revolutionize computation, cryptography, and communication. Unlike classical software, quantum algorithms operate on principles that are fundamentally different from those of traditional computation, such as superposition, entanglement, and non-commutativity. These features require new mathematical frameworks and verification techniques. As quantum computers become more powerful and accessible, the need for rigorous, machine-checked proofs of correctness and security in quantum software is increasingly urgent.
+  </p>
+  <p>
+    The history of quantum physics is filled with examples of brilliant minds being led astray by its unintuitive nature. Even experts can make subtle mistakes in reasoning, and informal arguments may overlook critical details. Formalization in a system like Lean provides a safeguard against such errors, ensuring that every step is logically sound and that assumptions are made explicit. This is especially important in quantum information theory, where theorems often have precise conditions and applicability, and where security proofs for quantum cryptography must be watertight.
+  </p>
+  <p>
+    Quantum information theory is also unusually well-suited to formalization compared to other areas of physics. Many quantum theorems are stated with clear, mathematical assumptions and do not rely on the kinds of approximations or empirical models common in other fields. This clarity makes it possible to encode quantum results in proof assistants like Lean, opening the door to verified libraries of quantum algorithms, protocols, and foundational results. By formalizing quantum information, we not only increase confidence in our understanding, but also lay the groundwork for verified quantum software and hardware, which will be essential as quantum technologies mature.
+  </p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
