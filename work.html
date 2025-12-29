@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Completed and Ongoing Work</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-nav .nav-link {
+      font-size: 1.5rem;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+        <div class="ms-auto d-flex align-items-center">
+        <img src="images/logo.png" alt="QFormal Logo" style="height:40px;" class="ms-2">
+        </div>
+    QFormal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-lean.html">Why Lean?</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-quantum.html">Why Quantum?</a></li>
+        <li class="nav-item"><a class="nav-link" href="talks.html">Talks</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+  <h2>Lean Formalization Repositories</h2>
+  <ul>
+    <li><b><a href="https://github.com/Timeroot/Lean-QuantumInfo">Lean-QuantumInfo</a></b>: Formalizing <b>quantum information theory and quantum physics</b>.
+        <p>Our main focus. This starts by defining quantum states, unitaries and channels. It works up through concepts such as dual maps, pure and separable states, convex combinations, quantum entropies,
+        mutual information, resource theories, and ultimately proving key theorems such as the no-cloning theorem, Choi's theorem on CPTP maps, the data processing inequality, and the
+        generalized quantum Stein's lemma.</p></li>
+    <li><b><a href="https://github.com/Timeroot/SigFigs">SigFigs</a></b>: A library for <b>significant figures and uncertainty propagation</b>.
+        <p> This library provides tools for representing numbers with significant figures, performing arithmetic operations while correctly propagating uncertainties, and formatting results for scientific reporting.
+        While Lean lets one work with arbitrary numerical types and prove their properties given semantics of that type, the <i>semantics</i> of uncertainty propagation is not built into Lean's core or Mathlib.
+        This repository gives such appropriate semantics, allowing machine-checkable proofs of computation <i>under</i> the assumptions of an uncertainty model. Several different
+        uncertainty models are supported.</p></li>
+    <li><b><a href="https://github.com/Timeroot/ComputableReal">ComputableReal</a></b>: A <b>computable</b> implementation of <b>real numbers</b> in Lean.
+        <p>This offers, where possible, computable definitions of real numbered functions, permitted the use of calculation within the type-safety of Lean to check certain
+        proofs involving real numbers. This extends Mathlib's existing construction of real numbers via Cauchy sequences by augmenting it with appropriate
+        computable bounds. This is particularly crucial to <b>scientific computation</b> where messy explicit decimals and numerical checks are frequent.</p></li>
+        </p></li>
+    <li><b><a href="https://github.com/Timeroot/CircuitComp">CircuitComp</a></b>: Formalization of <b>classical circuit complexity theory</b> in Lean.
+        <p>This project formalizes key concepts and theorems from classical circuit complexity theory, including Boolean circuits and complexity classes (such as NC, AC, and P/poly).
+        Turing machine-based complexity theory is present in Mathlib, but extremely difficult to work with due to the need to "program" the Turing machine. In comparison, the (non-uniform)
+        circuit model is far easier to reason about within Lean. This repository aims to provide a solid foundation for further exploration of complexity theory within Lean. Currently
+        the main target is to complete the proof that NC<sup>i</sup> ⊆ AC<sup>i</sup> ⊆ NC<sup>i+1</sup>, and PARTIY is not in AC<sup>0</sup>. After this, establishing
+        relationships between classical and quantum complexity classes is a natural next step.
+        </p></li>
+  </ul>
+  <h2>Manuscripts</h2>
+  <ul>
+  <li>Formalizing the quantum Stein's lemma: <a href="https://arxiv.org/pdf/2510.08672" target="_blank">arXiv:2510.08672</a></li>
+  <p></p>
+  <li>A note <a href="pdfs/SigFigs_report.pdf">on the purpose and uncertainty models</a> of the SigFigs library.</li>
+  </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

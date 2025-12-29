@@ -11,14 +11,35 @@
       padding-left: 1.5rem !important;
       padding-right: 1.5rem !important;
     }
+
+    .headshot {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #555;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      /* Example crop adjustment: */
+      object-position: 50% 50%; /* Adjust these numbers for crop */
+      margin-bottom: 10px;
+    }
+    .person {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .person-info {
+      flex: 1;
+    }
   </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="/">
         <div class="ms-auto d-flex align-items-center">
-        <img src="logo.png" alt="QFormal Logo" style="height:40px;" class="ms-2">
+        <img src="images/logo.png" alt="QFormal Logo" style="height:40px;" class="ms-2">
         </div>
     QFormal</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,6 +48,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
         <li class="nav-item"><a class="nav-link" href="why-lean.html">Why Lean?</a></li>
         <li class="nav-item"><a class="nav-link" href="why-quantum.html">Why Quantum?</a></li>
         <li class="nav-item"><a class="nav-link" href="talks.html">Talks</a></li>
@@ -39,17 +61,35 @@
   <h2>About the Quantum Formal Initiative (QFormal)</h2>
   <p>QFormal is an effort led by Alex Meiburg, Leonardo Lessa, and Rodolfo Soldati at the University of Waterloo and the Perimeter Institute for Theoretical Physics.</p>
   <p>We focus on formalizing quantum information theory in Lean 4. PLACEHOLDER for more details about our mission, goals, and current projects.</p>
-  <h3>Team</h3>
-  <ul>
-    <li>Alex Meiburg (PLACEHOLDER bio)</li>
-    <li>Leonardo Lessa (PLACEHOLDER bio)</li>
-    <li>Rodolfo Soldati (PLACEHOLDER bio)</li>
-  </ul>
   <h3>Institutions</h3>
   <ul>
-    <li>University of Waterloo (PLACEHOLDER details)</li>
-    <li>Perimeter Institute for Theoretical Physics (PLACEHOLDER details)</li>
+    <li><a href="https://uwaterloo.ca/institute-for-quantum-computing/">University of Waterloo, Institute for Quantum Computing</a></li>
+    <li><a href="https://perimeterinstitute.ca/">Perimeter Institute for Theoretical Physics</a></li>
   </ul>
+  <h3>Team</h3>
+  <div class="bio">
+    <div class="person">
+      <img src="images/meiburg.jpg" alt="Meiburg headshot" class="headshot" style="object-position: 50% 10%;">
+      <div class="person-info">
+        <strong>Alexander Meiburg</strong> - <a href="http://ohaithe.re/">Website</a><br>
+        Alexander is a postdoc at the Perimeter Institute and IQC. He completed his PhD at the University of California, Santa Barbara under the supervision of Bela Bauer. He also works with <a href="http://harmonic.fun/">Harmonic</a> build AI for Lean.
+      </div>
+    </div>
+    <div class="person">
+      <img src="images/lessa.jpg" alt="Lessa headshot" class="headshot" style="object-position: 50% 50%;">
+      <div class="person-info">
+        <strong>Leonardo A. Lessa</strong> - <a href="https://www2.perimeterinstitute.ca/personal/llessa/">Website</a><br>
+        Leonardo is a PhD student at Perimeter supervised by Chong Wang & Timothy Hsieh.
+      </div>
+    </div>
+    <div class="person">
+      <img src="images/soldati.jpg" alt="Soldati headshot" class="headshot" style="object-position: 50% 50%;">
+      <div class="person-info">
+        <strong>Rodolfo Soldati</strong> - <a href="https://rodolfor-s.github.io/">Website</a><br>
+        Rodolfo is a postdoctoral researcher at the Perimeter Institute and IQC. He completed his PhD at the University of Stuttgart under the supervision of Eric Lutz.
+      </div>
+    </div>
+  </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
