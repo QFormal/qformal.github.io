@@ -25,12 +25,21 @@
     }
     .person {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 24px;
-      margin-bottom: 32px;
+      text-align: center;
+      gap: 12px;
+      flex: 1;
+      min-width: 250px;
     }
     .person-info {
       flex: 1;
+    }
+    .bio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-around;
     }
   </style>
 </head>
@@ -72,7 +81,7 @@
       <img src="images/meiburg.jpg" alt="Meiburg headshot" class="headshot" style="object-position: 50% 10%;">
       <div class="person-info">
         <strong>Alexander Meiburg</strong> - <a href="http://ohaithe.re/">Website</a><br>
-        Alexander is a postdoc at the Perimeter Institute and IQC. He completed his PhD at the University of California, Santa Barbara under the supervision of Bela Bauer. He also works with <a href="http://harmonic.fun/">Harmonic</a> build AI for Lean.
+        Alexander is a postdoc at the Perimeter Institute and IQC. He completed his PhD at the University of California, Santa Barbara under the supervision of Bela Bauer. He also works with <a href="http://harmonic.fun/">Harmonic</a> building AI for Lean.
       </div>
     </div>
     <div class="person">
@@ -86,7 +95,7 @@
       <img src="images/soldati.jpg" alt="Soldati headshot" class="headshot" style="object-position: 50% 50%;">
       <div class="person-info">
         <strong>Rodolfo Soldati</strong> - <a href="https://rodolfor-s.github.io/">Website</a><br>
-        Rodolfo is a postdoctoral researcher at the Perimeter Institute and IQC. He completed his PhD at the University of Stuttgart under the supervision of Eric Lutz.
+        Rodolfo is a postdoctoral researcher at the Perimeter Institute and IQC. He completed his PhD jointly at University of Stuttgart and the University of São Paulo, and under the supervision of Eric Lutz and Gabriel Landi.
       </div>
     </div>
   </div>
